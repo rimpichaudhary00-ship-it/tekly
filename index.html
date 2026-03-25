@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -1078,3 +1079,1085 @@
     </script>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        color: #1a1a1a;
+      }
+      .bg-gradient-hero {
+        background: radial-gradient(circle at 70% 30%, #e0f2fe 0%, #ffffff 70%);
+      }
+      .circle-overlay {
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid rgba(59, 130, 246, 0.1);
+      }
+      .btn-primary {
+        background-color: #3b82f6;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #2563eb;
+        transform: translateY(-2px);
+      }
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .dark-section {
+        background-color: #0f172a;
+        color: white;
+      }
+      .project-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+      .blog-card img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      @media screen and (min-width: 1025px) {
+        .px-4 {
+          padding-left: 6rem !important;
+          padding-right: 6rem !important;
+        }
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-slideDown {
+        animation: slideDown 0.25s ease-out;
+      }
+      @media screen and (max-width: 767px) {
+        .mobile {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div
+      class="bg-sky-600 text-white py-2 px-4 md:px-20 flex flex-col md:flex-row justify-between text-xs font-medium"
+    >
+      <div class="flex gap-4">
+        <span class="flex items-center gap-1">
+          <svg
+            class="w-3 h-3"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            ></path>
+          </svg>
+          128 Munich 1258, Germany
+        </span>
+        <span class="flex items-center gap-1">
+          <svg
+            class="w-3 h-3"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
+          </svg>
+          help.me@example.com
+        </span>
+      </div>
+      <div class="flex gap-4 items-center mt-2 md:mt-0">
+        <span>Follow Us:</span>
+        <a href="#"
+          ><svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+            /></svg
+        ></a>
+        <a href="#"
+          ><svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+            /></svg
+        ></a>
+      </div>
+    </div>
+    <!-- Main Header -->
+    <header
+      class="bg-white/80 backdrop-blur-md sticky top-0 z-50 py-4 px-4 md:px-20 border-b border-gray-100"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <div class="bg-blue-600 p-2 rounded-lg">
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+          <span class="text-2xl font-bold text-gray-800">Tekly</span>
+        </div>
+        <nav class="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
+          <a href="/" class="text-blue-600">Home</a>
+          <a href="/about.html" class="hover:text-blue-600"
+            >About</a
+          >
+          <a href="/service.html" class="hover:text-blue-600"
+            >Services</a
+          >
+          <a href="/price.html" class="hover:text-blue-600"
+            >Pricing</a>
+          <a href="/contact.html" class="hover:text-blue-600"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-6">
+          <div class="hidden lg:flex items-center gap-3">
+            <div class="bg-blue-50 p-2 rounded-full">
+              <svg
+                class="w-5 h-5 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-[10px] text-gray-400 uppercase">Hotline 24/7</p>
+              <p class="text-sm font-bold">+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <!-- Mobile Hamburger -->
+          <button
+            id="menuBtn"
+            class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100"
+          >
+            <!-- Hamburger -->
+            <svg
+              id="iconOpen"
+              class="w-6 h-6 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+
+            <!-- Close -->
+            <svg
+              id="iconClose"
+              class="w-6 h-6 text-gray-700 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <a href="#" class="mobile btn-primary text-sm">Let's Talk</a>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden px-4 pt-6 pb-8 bg-white border-t border-gray-100 animate-slideDown"
+      >
+        <nav class="flex flex-col gap-4 text-sm font-semibold text-gray-700">
+          <a href="/" class="text-blue-600">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/service.html">Services</a>
+          <a href="price.html">Pricing</a>
+          <a href="/contact.html">Contact</a>
+          <a href="#" class="btn-primary mt-4 text-center">Let's Talk</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="overflow-x-hidden">
+      <!-- Hero Section -->
+      <section
+        class="relative bg-gradient-hero py-20 px-4 overflow-hidden min-h-[600px] flex items-center"
+      >
+        <!-- Decorative Circles -->
+        <div
+          class="circle-overlay w-[600px] h-[600px] -right-40 -top-40 border-blue-200 opacity-20"
+        ></div>
+        <div
+          class="circle-overlay w-[800px] h-[800px] -right-60 -top-60 border-blue-100 opacity-20"
+        ></div>
+
+        <div
+          class="container mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10"
+        >
+          <div class="max-w-xl">
+            <div class="flex items-center gap-2 mb-6">
+              <span class="bg-blue-100 text-blue-600 p-1 rounded-full"
+                ><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  ></path></svg
+              ></span>
+              <span
+                class="text-blue-600 font-bold text-xs uppercase tracking-widest"
+                >Welcome to Tekly IT Solution</span
+              >
+            </div>
+            <h1
+              class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6"
+            >
+              We Build Ideas Driven by the
+              <span class="text-blue-600">Future.</span>
+            </h1>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+              We understand the importance of financial planning for individuals
+              and businesses alike. Our tailored solutions ensure your growth.
+            </p>
+            <div class="flex items-center gap-6">
+              <button class="btn-primary px-8">Get Started</button>
+              <div class="text-gray-600 text-sm">
+                <span class="block text-gray-400">Hotline:</span>
+                <span class="font-bold text-gray-800">+(733)-860-2906</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="bg-white p-4 rounded-2xl shadow-2xl relative z-10 animate-float"
+            >
+              <img
+                src="https://csspicker.dev/api/image/?q=business+meeting&image_type=photo"
+                alt="Hero Image"
+                class="rounded-xl w-full h-[400px] object-cover"
+              />
+            </div>
+            <!-- Floating Elements -->
+            <div
+              class="absolute -top-10 -right-10 bg-white p-4 rounded-xl shadow-lg z-20 hidden md:block"
+            >
+              <div class="text-xs font-bold text-blue-600 mb-1">
+                $120,544
+                <span class="text-gray-400 font-normal">Total Sales</span>
+              </div>
+              <div class="w-32 h-12 bg-blue-50 rounded"></div>
+            </div>
+            <div
+              class="absolute -bottom-6 -left-10 bg-white p-4 rounded-xl shadow-lg z-20 flex gap-2 items-center hidden md:flex"
+            >
+              <div class="flex -space-x-3">
+                <img
+                  src="https://csspicker.dev/api/image/?q=person&image_type=photo"
+                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+                <img
+                  src="https://csspicker.dev/api/image/?q=portrait&image_type=photo"
+                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+                <img
+                  src="https://csspicker.dev/api/image/?q=user&image_type=photo"
+                  class="w-8 h-8 rounded-full border-2 border-white"
+                />
+                <div
+                  class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-[10px] border-2 border-white"
+                >
+                  +
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-24 bg-white px-4">
+        <div class="container mx-auto text-center mb-16">
+          <h4 class="text-blue-600 font-bold text-sm uppercase mb-4">
+            Our Unique Features
+          </h4>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+            Discover Our Unique Features
+          </h2>
+        </div>
+        <div class="container mx-auto grid md:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-100 card-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Deployment Services</h3>
+            <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+              We denounce with righteous indignation & dislike men who are so
+              beguiled.
+            </p>
+            <a
+              href="#"
+              class="text-sm font-bold text-gray-900 flex items-center gap-2 hover:text-blue-600"
+              >Read More <span>→</span></a
+            >
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-gray-50 p-8 rounded-xl border border-gray-100 card-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-white rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Software Development</h3>
+            <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+              We denounce with righteous indignation & dislike men who are so
+              beguiled.
+            </p>
+            <a
+              href="#"
+              class="text-sm font-bold text-gray-900 flex items-center gap-2 hover:text-blue-600"
+              >Read More <span>→</span></a
+            >
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-100 card-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Technology Solutions</h3>
+            <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+              We denounce with righteous indignation & dislike men who are so
+              beguiled.
+            </p>
+            <a
+              href="#"
+              class="text-sm font-bold text-gray-900 flex items-center gap-2 hover:text-blue-600"
+              >Read More <span>→</span></a
+            >
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-100 card-hover transition-all duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-blue-50 rounded-lg flex items-center justify-center mb-6"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">AI-Driven Insights</h3>
+            <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+              We denounce with righteous indignation & dislike men who are so
+              beguiled.
+            </p>
+            <a
+              href="#"
+              class="text-sm font-bold text-gray-900 flex items-center gap-2 hover:text-blue-600"
+              >Read More <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section class="py-24 bg-gray-50 px-4">
+        <div class="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div class="relative">
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                src="https://csspicker.dev/api/image/?q=team+work&image_type=photo"
+                class="rounded-2xl w-full h-64 object-cover"
+              />
+              <img
+                src="https://csspicker.dev/api/image/?q=office&image_type=photo"
+                class="rounded-2xl w-full h-64 object-cover mt-12"
+              />
+            </div>
+            <div
+              class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl max-w-[200px] hidden md:block"
+            >
+              <p class="text-4xl font-extrabold text-blue-600">10+</p>
+              <p class="text-sm font-bold text-gray-600">
+                Years of Experience in IT Service
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4
+              class="text-blue-600 font-bold text-sm uppercase mb-4 tracking-widest"
+            >
+              About Our Company
+            </h4>
+            <h2
+              class="text-4xl font-extrabold text-gray-900 mb-6 leading-tight"
+            >
+              We provide perfect IT solutions & technology for any startups
+              Agency's.
+            </h2>
+            <p class="text-gray-500 mb-8 leading-relaxed">
+              Deliver beautiful emails that get opened and clicked every time.
+              Personalized content to every subscriber. Fully customizable
+              templates. Build relationships that lead to conversions.
+            </p>
+
+            <div class="space-y-6 mb-10">
+              <div class="flex items-start gap-4">
+                <div class="bg-blue-100 p-3 rounded-full">
+                  <svg
+                    class="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5 class="font-bold text-gray-900 mb-1">
+                    Best Technical Solution
+                  </h5>
+                  <p class="text-sm text-gray-500">
+                    Nanotechnology immersion along the information high will
+                    close the loop on focusing solely.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-primary">Get Our Services</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dark Services Section -->
+      <section class="dark-section py-24 px-4 relative overflow-hidden">
+        <!-- Background Decor -->
+        <div
+          class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+        >
+          <div
+            class="w-[500px] h-[500px] border border-white rounded-full absolute -top-40 -left-40"
+          ></div>
+          <div
+            class="w-[700px] h-[700px] border border-white rounded-full absolute -top-60 -left-60"
+          ></div>
+        </div>
+
+        <div class="container mx-auto text-center mb-20 relative z-10">
+          <h4
+            class="text-blue-400 font-bold text-sm uppercase mb-4 tracking-widest"
+          >
+            Our Services
+          </h4>
+          <h2 class="text-4xl font-extrabold mb-4">Our Unique Services</h2>
+          <p class="text-gray-400 max-w-lg mx-auto text-sm">
+            Our team is dedicated to delivering exceptional IT solutions
+            tailored to meet the unique needs of each client.
+          </p>
+        </div>
+
+        <div
+          class="container mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10"
+        >
+          <div class="space-y-12">
+            <div
+              class="text-blue-400 font-bold text-xs uppercase tracking-[0.3em] mb-4"
+            >
+              Unique Service Features
+            </div>
+            <h2 class="text-4xl font-bold mb-8">
+              Analytics Overview You've Always Wanted
+            </h2>
+
+            <div class="space-y-10">
+              <div class="flex gap-6">
+                <div
+                  class="w-12 h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2">
+                    Tailored Solutions for Every Business
+                  </h4>
+                  <p class="text-gray-400 text-sm">
+                    Our digital marketing agency is dedicated to transforming
+                    online potential into tangible success.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="w-12 h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2">
+                    Dedicated Client Success Team
+                  </h4>
+                  <p class="text-gray-400 text-sm">
+                    Our digital marketing agency is dedicated to transforming
+                    online potential into tangible success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="https://csspicker.dev/api/image/?q=developers+working&image_type=photo"
+              class="rounded-2xl w-full h-[500px] object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-500"
+            />
+            <div
+              class="absolute -bottom-6 -left-6 bg-blue-600 p-8 rounded-2xl hidden md:block"
+            >
+              <svg
+                class="w-12 h-12 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section (Dark) -->
+      <section class="dark-section py-24 px-4">
+        <div class="container mx-auto text-center mb-20">
+          <h4 class="text-blue-400 font-bold text-sm uppercase mb-4">
+            Our Projects
+          </h4>
+          <h2 class="text-4xl font-extrabold mb-4">Our Recent Projects</h2>
+          <p class="text-gray-400 max-w-lg mx-auto text-sm">
+            Our team is dedicated to delivering exceptional IT solutions
+            tailored to meet the unique needs of each client.
+          </p>
+        </div>
+
+        <div class="container mx-auto max-w-5xl space-y-12">
+          <!-- Project 1 -->
+          <div class="project-card grid md:grid-cols-2 p-8 gap-12 items-center">
+            <div>
+              <h3 class="text-2xl font-bold mb-4">
+                Renewable Energy Landing Page
+              </h3>
+              <p class="text-gray-400 text-sm mb-6">
+                See the power of data in action as we break down how analytics
+                driven decisions led to a surge in campaign effectiveness.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="flex items-center gap-2 text-sm">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    ></path>
+                  </svg>
+                  900% increase in ROI
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    ></path>
+                  </svg>
+                  40% decrease in CAC
+                </div>
+              </div>
+              <button class="btn-primary py-2 text-sm">
+                Read Full Case Study
+              </button>
+            </div>
+            <div>
+              <img
+                src="https://csspicker.dev/api/image/?q=clean+energy&image_type=photo"
+                class="rounded-xl w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card grid md:grid-cols-2 p-8 gap-12 items-center">
+            <div>
+              <h3 class="text-2xl font-bold mb-4">
+                Based Digital Identity Management
+              </h3>
+              <p class="text-gray-400 text-sm mb-6">
+                See the power of data in action as we break down how analytics
+                driven decisions led to a surge in campaign effectiveness.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="flex items-center gap-2 text-sm">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    ></path>
+                  </svg>
+                  900% increase in ROI
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                  <svg
+                    class="w-4 h-4 text-green-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    ></path>
+                  </svg>
+                  40% decrease in CAC
+                </div>
+              </div>
+              <button class="btn-primary py-2 text-sm">
+                Read Full Case Study
+              </button>
+            </div>
+            <div>
+              <img
+                src="https://csspicker.dev/api/image/?q=cybersecurity&image_type=photo"
+                class="rounded-xl w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Footer Section -->
+      <section class="bg-gray-900 py-16 px-4">
+        <div
+          class="container mx-auto bg-blue-600 rounded-3xl p-12 flex flex-col md:flex-row items-center justify-between gap-8"
+        >
+          <div class="flex items-center gap-6">
+            <div
+              class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center"
+            >
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-white mb-2">
+                Sign Up To Our Newsletters.
+              </h2>
+              <p class="text-blue-100">
+                Subscribe to our Newsletter & Event Right Now to be Updated
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <div
+              class="bg-white p-2 rounded-full flex overflow-hidden max-w-md w-full"
+            >
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                class="bg-transparent px-6 py-2 outline-none flex-grow text-gray-800"
+              />
+              <button
+                class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition-colors"
+              >
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 text-gray-400 py-20 px-4 border-t border-gray-800"
+    >
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-8">
+            <div class="bg-blue-600 p-2 rounded-lg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <span class="text-2xl font-bold text-white">Tekly</span>
+          </div>
+
+          <p class="text-sm leading-relaxed mb-8">
+            Our dedicated support team is available 24/7 to ensure smooth IT
+            operations, quick issue resolution.
+          </p>
+
+          <div class="flex gap-4">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-white font-bold mb-8">Our Services</h4>
+          <ul class="space-y-4 text-sm">
+            <li>
+              <a href="#" class="hover:text-blue-600 transition-colors"
+                >Database Solution</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition-colors"
+                >Data Protection</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition-colors"
+                >App Development</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition-colors"
+                >Machine Learning</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition-colors"
+                >Helpdesk Services</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <h4 class="text-white font-bold mb-8">Contact Information</h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-blue-600 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+              </svg>
+              <span>12 Tech Avenue, Suite 10, Innovation City, US</span>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-blue-600 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              <span>+1 234 567 8901</span>
+            </li>
+
+            <li class="flex items-start gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-blue-600 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <span>tekly@example.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Latest Posts -->
+        <div>
+          <h4 class="text-white font-bold mb-8">Latest Posts</h4>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <img
+                src="https://csspicker.dev/api/image/?q=blog1&image_type=photo"
+                alt="Blog post"
+                loading="lazy"
+                class="w-16 h-16 rounded object-cover"
+              />
+              <div>
+                <p class="text-xs text-blue-600 mb-1">May 17, 2024</p>
+                <h5 class="text-white text-xs font-bold leading-tight">
+                  How Businesses Are Reshaping Industries
+                </h5>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <img
+                src="https://csspicker.dev/api/image/?q=blog2&image_type=photo"
+                alt="Blog post"
+                loading="lazy"
+                class="w-16 h-16 rounded object-cover"
+              />
+              <div>
+                <p class="text-xs text-blue-600 mb-1">May 15, 2024</p>
+                <h5 class="text-white text-xs font-bold leading-tight">
+                  Key Trends Reshaping the IT Industry
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="container mx-auto mt-20 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs"
+      >
+        <p>© 2024 Tekly. All Rights Reserved.</p>
+        <div class="flex gap-8 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white">Privacy policy</a>
+          <a href="#" class="hover:text-white">Terms of use</a>
+          <a href="#" class="hover:text-white">Site map</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const iconOpen = document.getElementById("iconOpen");
+        const iconClose = document.getElementById("iconClose");
+
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+          iconOpen.classList.toggle("hidden");
+          iconClose.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
+>>>>>>> 2dd1cb1a46208d72d52ccd87afc7720f90f6748b
