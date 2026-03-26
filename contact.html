@@ -480,11 +480,22 @@
 
     <div class="contact-page">
       <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1>Contact Us</h1>
-          <p>Home / Contact Us</p>
+      <section
+        class="relative h-[400px] flex items-center justify-center text-center text-white overflow-hidden"
+      >
+        <img
+          src="/images/Contact Us Banner.jpg"
+          alt="Hero Background"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10">
+          <h1 class="text-5xl font-bold mb-4">Contact Us</h1>
+          <nav class="text-sm font-medium">
+            <span class="text-gray-300">Home</span>
+            <span class="mx-2 text-gray-400">/</span>
+            <span class="text-white">Contact Us</span>
+          </nav>
         </div>
       </section>
 
